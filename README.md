@@ -38,6 +38,8 @@
 
 <h4>
  0.png the web page and lables how the user enter the features values
+</h4>
+<h4>
 1(1).png the result in a printed json file 
   this json files contain :
     1-predicted_category:the number of the predected category (have the largest proabability)
