@@ -1,36 +1,23 @@
-<h1>Steps of the project :</h1>
-      <h2>1- Data Analysis : </h2>
-            <h4>analysis the data of UCI Heart Disease Data and clean 
-            to deal with null values i had two options one is to delete null but i saw that the data will be only 299 row from 920 total number
-            so it is not a good decition
-            i used another ways to deal with it like median and mode
-            i used some function to understand the data like 
-            describtion and info value counts unique calues in each columns 
-            then i used the cleaned data to find the relations between the features in the data 
-            show some plots for individual columns and some between two columns and between all the columns</h4>
+Project Overview
+This project focuses on predicting heart disease using the UCI Heart Disease dataset. The process involves data analysis, model building, and deploying a Flask application to make predictions based on user inputs. Below are the detailed steps of the project:
 
-      <h2>2- Model :</h2>
-
-          <h4>Building the model for predection 
-          first clean the data like we did in Data analysis notebook and make some preprocessing like encodding , standerscaler ,splitting the data then 
-          building our model and show the performance of it
-          next stepp is to save the model ,encoder (onehot encoder and lable encoder )and stander scaler ,finally make an example of how to use the model and process the               input to be
-          suitable  for my model and to get suitable output this step help me alot in the part of flask app so i already know in this step how to process the input from the            user to be suitable for my model 
-          then do the predection and bring my result and show it </h4>
-
-      <h2>3-app :</h2>
-
-          <h4>flask code which we use to take inputs from the patients or from the doctor and make some processing in it then send it to our model to get the predection 
-          same processing was in the model notebook when show an example</h4>
-
-
-      <h2>4-templates:</h2>
-          <h4>contain index.html 
-          using a basic html page called index.html to show some lables to write in the values of the feature and predict button and show the returned predection</h4>
-
-      <h3>saved files :
-            1-heart_disease_encoder.pkl :saving the label encoder
-            2-heart_disease_model.keras:saving my model
-            3-heart_disease_OneHotEncoder.pkl:saving the onehot encoder
-            4-heart_disease_standard_scaler.pkl:sasving stander scaler
-            5-heart_disease_uci:the csv file which contain the data</h3>
+Steps of the Project:
+1. Data Analysis
+Dataset: UCI Heart Disease Data.
+Data Cleaning: Managed null values by considering alternatives like median and mode imputation instead of deletion, preserving the dataset size from reducing to 299 rows out of 920.
+Exploratory Data Analysis: Used functions such as describe(), info(), and value_counts() to understand the data. Analyzed relationships between features and visualized the data using plots for individual columns, as well as pairwise comparisons.
+2. Model Building
+Preprocessing: Performed data cleaning, encoding (OneHotEncoder and LabelEncoder), and scaling (StandardScaler). The data was then split into training and testing sets.
+Model Development: Built a prediction model and evaluated its performance.
+Saving Components: Saved the trained model, encoders, and scaler for future use.
+Example Usage: Provided an example of how to process inputs to be compatible with the model, which was useful in developing the Flask application for real-time predictions.
+3. Flask Application
+Functionality: Developed a Flask app to accept inputs from patients or doctors, process them, and use the trained model to predict heart disease. The input processing steps align with those used in the model development notebook.
+4. Templates
+Index Page: The app includes a basic HTML page (index.html) with input fields for model features and a button to trigger predictions. It displays the prediction results clearly to the user.
+Saved Files
+heart_disease_encoder.pkl: Saved Label Encoder.
+heart_disease_model.keras: Saved prediction model.
+heart_disease_OneHotEncoder.pkl: Saved OneHot Encoder.
+heart_disease_standard_scaler.pkl: Saved Standard Scaler.
+heart_disease_uci.csv: CSV file containing the dataset.
