@@ -1,23 +1,36 @@
-Project Overview
-This project focuses on predicting heart disease using the UCI Heart Disease dataset. The process involves data analysis, model building, and deploying a Flask application to make predictions based on user inputs. Below are the detailed steps of the project:
+<h1>Steps of the project :</h1>
 
-Steps of the Project:
-1. Data Analysis
-Dataset: UCI Heart Disease Data.
-Data Cleaning: Managed null values by considering alternatives like median and mode imputation instead of deletion, preserving the dataset size from reducing to 299 rows out of 920.
-Exploratory Data Analysis: Used functions such as describe(), info(), and value_counts() to understand the data. Analyzed relationships between features and visualized the data using plots for individual columns, as well as pairwise comparisons.
-2. Model Building
-Preprocessing: Performed data cleaning, encoding (OneHotEncoder and LabelEncoder), and scaling (StandardScaler). The data was then split into training and testing sets.
-Model Development: Built a prediction model and evaluated its performance.
-Saving Components: Saved the trained model, encoders, and scaler for future use.
-Example Usage: Provided an example of how to process inputs to be compatible with the model, which was useful in developing the Flask application for real-time predictions.
-3. Flask Application
-Functionality: Developed a Flask app to accept inputs from patients or doctors, process them, and use the trained model to predict heart disease. The input processing steps align with those used in the model development notebook.
-4. Templates
-Index Page: The app includes a basic HTML page (index.html) with input fields for model features and a button to trigger predictions. It displays the prediction results clearly to the user.
-Saved Files
-heart_disease_encoder.pkl: Saved Label Encoder.
-heart_disease_model.keras: Saved prediction model.
-heart_disease_OneHotEncoder.pkl: Saved OneHot Encoder.
-heart_disease_standard_scaler.pkl: Saved Standard Scaler.
-heart_disease_uci.csv: CSV file containing the dataset.
+<h2>1- Data Analysis :</h2>
+<h4>
+  - Analysis of the UCI Heart Disease Data, focusing on data cleaning to handle null values. <br>
+  - Instead of deleting null values, which would reduce the dataset to 299 rows from 920, alternatives like median and mode imputation were used. <br>
+  - Used functions like `describe()`, `info()`, `value_counts()`, and examined unique values in each column. <br>
+  - Explored relationships between features using various plots, including individual column plots and pairwise comparisons.
+</h4>
+
+<h2>2- Model :</h2>
+<h4>
+  - Built a prediction model with data preprocessing steps including encoding, scaling, and data splitting. <br>
+  - Demonstrated the model's performance and saved the model, encoders (OneHot and Label Encoders), and the Standard Scaler. <br>
+  - Provided an example on how to process input data to be compatible with the model, facilitating integration with the Flask app.
+</h4>
+
+<h2>3- App :</h2>
+<h4>
+  - Developed a Flask application to collect inputs from patients or doctors, process them, and use the model for predictions. <br>
+  - Input processing in the app follows the same steps outlined in the model development phase.
+</h4>
+
+<h2>4- Templates:</h2>
+<h4>
+  - Includes `index.html`, a basic HTML page for input fields corresponding to model features, a predict button, and a section to display prediction results.
+</h4>
+
+<h3>Saved Files :</h3>
+<h4>
+  1. <strong>heart_disease_encoder.pkl</strong>: Saved Label Encoder. <br>
+  2. <strong>heart_disease_model.keras</strong>: Saved prediction model. <br>
+  3. <strong>heart_disease_OneHotEncoder.pkl</strong>: Saved OneHot Encoder. <br>
+  4. <strong>heart_disease_standard_scaler.pkl</strong>: Saved Standard Scaler. <br>
+  5. <strong>heart_disease_uci.csv</strong>: CSV file containing the dataset.
+</h4>
