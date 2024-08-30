@@ -34,3 +34,13 @@
   4. <strong>heart_disease_standard_scaler.pkl</strong>: Saved Standard Scaler. <br>
   5. <strong>heart_disease_uci.csv</strong>: CSV file containing the dataset.
 </h4>
+
+
+<h4>
+ 0.png the web page and lables how the user enter the features values
+1(1).png the result in a printed json file 
+  this json files contain :
+    1-predicted_category:the number of the predected category (have the largest proabability)
+    2-predected_label :the meaning of the number in the predicted category 
+    3-prediction_probability:contain the probabilty of each predection number in my labels
+</h4>
